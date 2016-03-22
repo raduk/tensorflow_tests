@@ -13,4 +13,4 @@ with tf.Graph().as_default(), tf.Session() as sess:
     sess.run(c)
     print time.time()-start_time
 
-    tf.train.write_graph(sess.graph_def, './output' , 'test.pb', as_text=False)
+    tf.train.write_graph(sess.graph_def, '.' , 'test.pb', as_text=False)
